@@ -15,6 +15,8 @@ def get_db():
     finally:
         db.close()
 
+
+
 @router.post("/register")
 def register(user: UserCreate, db: Session = Depends(get_db)):
     hashed_pw = pwd_context.hash(user.password) # Mã hóa mật khẩu

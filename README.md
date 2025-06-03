@@ -39,6 +39,12 @@ Nếu trên máy cũ bạn đã tạo `requirements.txt`, bạn có thể dùng:
 pip install -r requirements.txt
 ``` 
 
+Cập nhật requirements
+
+``` bash
+pip freeze > requirements.txt
+```
+
 Nếu trên máy cũ bạn đã tạo `requirements.txt`, bạn có thể dùng:
 
 ```bash
